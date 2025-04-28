@@ -1,0 +1,837 @@
+/* variables */
+:root {
+    --black: #262833;
+    --green: #5D8443;
+    --red: #CD2E4E;
+    --yellow: #FFCA4C;
+
+    --heading1-size: 2rem;
+    --action-buttons-size: 1.5rem;
+    --navigation-buttons-size: 0.75rem;
+
+    --paragraph1-size: 1.5rem;
+    --paragraph2-size: 1.25rem;
+}
+/* font faces */
+@font-face {
+    font-family: "Titan One" ;
+    src: url(./font/Titan_One/TitanOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: "alegrsans" ;
+    src: url(./font/Alegreya_Sans/AlegreyaSans-Regular.ttf);
+}
+
+/* General elements design */
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    border: #CD2E4E solid 0.2rem  ;
+    border-radius: 4px;
+}
+
+
+html {
+    font-size: 1vw;
+    font-family: alegrsans;
+    
+}
+
+
+body{
+    background-color: var(--black);
+    overflow-x: hidden;
+    padding: 0;
+    margin:0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1;
+    flex-basis: 33rem;
+    
+
+}
+
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+h1 {
+    text-align: center;
+    font-family: "titan one";
+    color:white;
+    font-size: var(--heading1-size);
+    margin: 1.5rem 0rem;
+    letter-spacing: 0.1rem;
+}
+
+/*  general classes for the buttons states  */
+.green_back_hover,
+.red_back_hover,
+.yellow_back_hover  {
+    background-color: white;
+}
+.green_back_hover:hover {
+    background-color: var(--green) ;
+    color:white;
+    cursor: pointer;
+}
+
+.red_back_hover:hover {
+    background-color: var(--red) ;
+    color:white;
+    cursor: pointer;
+}
+
+.yellow_back_hover:hover {
+    background-color: var(--yellow)  ;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.green_back_hover:active {
+    color:  #3a522b;
+}
+
+.red_back_hover:active {
+    color: #8b1f35 ;
+}
+
+.yellow_back_hover:active {
+    color:#705a27;
+}
+
+
+/* scroll bar design */
+::-webkit-scrollbar {
+    width: 1rem;
+    
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+    border-radius: 10rem;
+    padding: 1rem;
+    margin-block: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--black);
+    border-radius: 10rem;
+    width: 0.rem;
+    margin-block: 1rem;
+    border: 2px solid white;
+}
+
+/* header elements */
+.navigation_bar{
+    background-color: white;
+    display: inline-flex;
+    width: 27rem;
+    margin: 0.5rem;
+    height: auto;
+    padding: 0.25rem;
+    justify-content: space-between;
+    /* align-items: center;
+    justify-self: center; */
+    border-radius: 50px;
+    background-color: var(--black);
+    margin-left: 3.5rem;
+    
+}
+
+.get_down_button button{
+    width: 4rem;
+    aspect-ratio: 100/100;
+    background-color: white;
+    border: var(--black) 0.25rem solid;
+    color: var(--black);
+    border-radius: 4rem;
+    font-size: var(--action-buttons-size);
+    position: relative;
+    left: -1.5rem;
+    top: -1.5rem;
+}
+
+
+.navigation_bar button{
+    height: 2rem;
+    width: 6rem;
+    justify-self: center;
+    font-size: var(--navigation-buttons-size);
+    font-family: "titan one";
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    background-color: white;
+    color: var(--black);
+    padding: 0.25rem 1.25rem;
+}
+
+
+.navigation_bar button:hover{
+    text-shadow: #262833 2px 2px ;
+}
+
+.header_logo {
+    width: 8rem;
+    margin-right: 1rem;
+}
+/* header end */
+
+/* Baner start */
+.baner{
+    background-image: linear-gradient(to bottom, #FFCA4C 30%, var(--black));
+    width: 99rem;
+    height:100rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* the first background pattern */
+.baner_pattern1 { 
+    width: 19rem;
+    position: absolute;
+    right: 41rem;
+    z-index: 0;
+    transform: rotate(180deg);
+}
+
+/* the woman image */
+.baner_parista{
+    width: 29rem;
+    position: absolute;
+    right:36rem;
+    top: -8rem;
+    z-index: 0;    
+}
+/* the left part of the baner text "where every sip"  */
+.banner_text_part1 {
+    position: relative;
+    top: 10rem;
+    font-family: "titan one";
+    font-size: 5rem;
+    right: 30rem;
+    margin: 0;
+}
+
+/* the left part of the baner text "sparks inspiration"  */
+.banner_text_part2 {
+    position: relative;
+    left: 30rem;
+    font-family: "titan one";
+    top:4rem;
+    display: inline;
+    font-size: 5rem;
+    margin: 0;
+    width: auto;
+} 
+
+/* the big baner logo  */
+.baner_logo{
+    position: absolute;
+    width: 30rem;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(1%) hue-rotate(24deg) brightness(107%) contrast(101%);
+    top: 33rem;
+    left: 33rem;
+}
+
+
+.baner_book_now {
+    position: absolute;
+    padding: 1.25rem 2.5rem;
+    border-radius: 50rem;
+    border: none;
+    box-shadow: 4px 4px var(--black);
+    font-size: var(--action-buttons-size);
+    font-family: "titan one";
+    top: 30rem;
+    left: 5rem;
+}
+
+.cup {
+    position: absolute;
+    width: 6rem;
+}
+
+.first_cup {
+    top: 15rem;
+    left: 25rem;
+    transform: rotate(30deg);
+}
+.second_cup {
+    top:22rem;
+    left: 30rem;
+    transform: rotate(-20deg);
+}
+
+.third_cup { 
+    top:5rem;
+    right: 25rem;
+    transform: rotate(23deg);
+}
+
+/* baner end */ 
+/* about start */
+.about {
+    position: absolute;
+    top: 50rem;
+    width: 90vw;
+    padding: 1.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+/* the paragraphs below the two images  */
+.about p {
+    width: 25rem;
+    font-size: var(--paragraph1-size);
+    line-height: 2.25rem;
+    color:white;
+    font-family: "alegrsans";
+}
+
+/*  the left and right images  */
+.about_image{
+    width: 25rem;
+    height: auto;
+    border-radius: 2rem;
+}
+
+/* the left and right paragpraphs first letter */
+.first_p p::first-letter,
+.second_p p::first-letter {
+    initial-letter: 2;
+}
+
+.second_p{
+    padding-top: 10rem;
+}
+
+/* qualities part */
+.qualities_box {
+    margin: 6rem 0rem;
+    width: 80rem;
+}
+.qualities{
+    display: flex;
+    justify-content: space-between;
+}
+
+.qualitie {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    font-family: alegrsans;
+    width: 20%;
+}
+.qualitie > p {
+    font-size: var(--paragraph1-size);
+    color:white;
+    text-align: center;
+    margin: 0;
+}
+
+.qualitie img {
+    width: 9rem;
+}
+.qualitie details p {
+    width: 100%;
+    font-size: var(--paragraph2-size);
+    text-overflow: clip;
+
+}
+
+.qualitie details {
+    cursor: pointer;
+}
+
+/* beans part */
+.beans_section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:1rem;
+    height: auto;
+}
+
+.beans_section h1 {
+    margin-bottom: 0rem;
+}
+
+.beans_section figure {
+    color:white;
+    /* display: flex; */
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.beans_section video {
+    width: 35rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+/* about end */
+/* menu start */
+.menu {
+    background-image: url(image/patterns/pattern\ 2.svg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    width: 90rem;
+    padding: 0rem 10rem;
+}
+.menu_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap:1rem;
+
+}
+
+.menu_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 1.25rem;
+    height: 20rem;
+    width: 15rem;
+}
+
+.menu_card img {
+    width: 10rem;
+    aspect-ratio: 100/100;
+    transition: 0.5s width ;
+}
+.menu_card:hover img {
+    width: 11rem;
+    
+}
+.menu_card:active img {
+    width: 12rem;
+}
+
+.menu_card_name {
+    color: var(--black);
+    font-size: var(--paragraph1-size);
+    margin: 0;
+
+}
+
+.menu_card_desc {
+    color: var(--black);
+}
+
+
+.coffee_price  { 
+    font-size:  var(--paragraph2-size);
+}
+/* menu end */
+/* booking panel start */
+.booking {
+    margin: 3rem 0;
+    width: 75rem;
+}
+/* the big preview image */
+.booking_image_container {
+    width: 40%;
+    aspect-ratio: 100/100;
+    background-color: aliceblue;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking_image_container img {
+    width: 60%;
+}
+
+/* booking panel buttons and coffee choices */
+.booking_panel{
+    display: flex;
+    width: 100%;
+    padding: 3rem;
+    justify-content: space-around;
+    padding-top: 0rem;
+}
+.booking_details{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.booking_choices {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: alegrsans;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    direction: rtl;
+    height: 20rem;
+    width: 90%;
+    padding-left: 1.5rem;
+}
+
+/* booking panel scroll bar */
+.booking_choices::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.booking_choices::-webkit-scrollbar-track {
+    background-color: white;
+    border-radius: 10rem;
+    padding: 1rem;
+    margin-block: 1rem;
+}
+
+.booking_choices::-webkit-scrollbar-thumb {
+    background-color: var(--black);
+    border-radius: 10rem;
+    width: 0.5rem;
+    margin-block: 1rem;
+    border: 2px solid white;
+}
+
+
+.booking_choices::--webkit-scrollbar{
+    width: 100px;
+}
+
+.booking_choice {
+    border-bottom: 4px white solid;
+    padding-bottom: 1rem;
+    direction: ltr;
+    width: 100%;
+}
+.clickables {
+    display: flex;
+    justify-content: space-around;
+}
+.booking_choices p {
+    font-size: var(--paragraph1-size);
+    margin-top: 0;
+
+}
+
+.booking_choice .clickables img {
+    width: 4.5rem;
+}
+
+.booking_choice .clickables button {
+    width: 4rem;
+    aspect-ratio: 100/100;
+    border-radius: 1rem;
+    border: none;
+
+}
+
+/* seats hover state filters */
+.red_seat:hover {
+    filter: brightness(0) saturate(100%) invert(31%) sepia(41%) saturate(2480%) hue-rotate(318deg) brightness(86%) contrast(101%);
+}
+
+.yellow_seat:hover {
+    filter:  brightness(0) saturate(100%) invert(87%) sepia(97%) saturate(6418%) hue-rotate(317deg) brightness(101%) contrast(101%);
+}
+
+.green_seat:hover {
+    filter: brightness(0) saturate(100%) invert(47%) sepia(15%) saturate(1241%) hue-rotate(53deg) brightness(94%) contrast(86%);
+}
+
+ .seats img{
+    cursor: pointer;
+}
+
+/* the menu and add buttons */
+.booking_buttons {
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* the increase and decrease buttons */
+.amount_buttons  {
+    height: 100%;
+    width: 13rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    font-size: var(--paragraph1-size);
+    font-family: alegrsans;
+    border-radius: 1rem;
+    padding:0.5rem;
+    overflow: hidden;
+
+}
+
+
+.amount_buttons button {
+    height: 100%;
+    width: 5rem;
+    text-align: center;
+    font-size: var(--action-buttons-size);
+    font-family: "titan one";
+    background-color: transparent;
+    border: none;
+}
+
+.amount_buttons p {
+    border-left: 3px solid var(--black);
+    margin: 0;
+    width: 5rem;
+    border-right: 3px solid var(--black);
+}
+
+.booking_buttons p {
+    display: inline;
+}
+
+.amount_buttons .increase_button:hover{
+    color: var(--green);
+    font-size: 2rem;
+}
+
+.amount_buttons .increase_button:active {
+    color: #3a522b;
+}
+
+.amount_buttons .decrease_button:hover{
+    color: var(--red);
+    font-size: 2rem;
+}
+
+.amount_buttons .decrease_button:active{
+    color:#8b1f35;
+}
+
+
+/* the back to menu and the add to cart button */
+.booking_buttons .add_card_button,
+.booking_buttons .menu_button {
+    /* padding: 1.25rem 2.5rem; */
+    height: 4rem;
+    width: 9rem;
+    border-radius: 50rem;
+    border: none;
+    box-shadow: 4px 4px black;
+    font-size: var(--action-buttons-size);
+    font-family: "titan one";
+}
+
+/* booking end */
+/* self correcting quiz start */
+.quiz {
+    font-size: var(--paragraph1-size);
+    font-family: alegrsans;
+    color: white;
+}
+
+.quiz form  { 
+    padding: 1rem 2rem ;
+}
+
+
+.quiz > p {
+    text-align: center;
+}
+
+.quiz input[type="range"] {
+    width: 30rem;
+}
+.quiz input[type="range"] + p {
+
+    display: inline;
+}
+.quiz input[type="submit"] {
+    padding: 1.25rem 2.5rem;
+    border-radius: 50rem;
+    border: none;
+    box-shadow: 4px 4px black;
+    font-size: var(--action-buttons-size);
+    font-family: "titan one";
+    justify-self: center;
+}
+
+#quiz_score {
+    font-size: var(--paragraph1-size);
+    color: var(--green);   
+}
+
+
+.progress_indicator_text {
+    display: inline;
+    font-size: var(--paragraph2-size);
+    margin: 0rem 1rem;
+}
+
+/* contact form */
+
+
+.contact_form {
+    width: 100rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact_form form {
+    width: 50rem;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+.contact_form form #name,
+.contact_form form #email {
+    width: 45%;
+    height: 3.5rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: none;
+    font-size: var(--paragraph2-size);
+
+}
+
+.contact_form form #title {
+    width: 45%;
+    height: 3.5rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: none;
+    font-size: var(--paragraph2-size);
+}
+
+.contact_form form #content {
+    width: 100%;
+    height: 10rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: var(--paragraph2-size);
+}
+
+.contact_form form input[type="submit"]{
+    padding: 1.25rem 2.5rem;
+    border-radius: 50rem;
+    
+    border: none;
+    box-shadow: 4px 4px black;
+    font-size: var(--action-buttons-size);
+    font-family: "titan one";
+    justify-self: center;
+}
+
+.contact_form_error {
+    color:white;
+    flex-grow: 1;
+    align-self: center;
+    color: var(--red);
+}
+
+
+/* footer */
+
+.footer_content{
+    width:100%;
+    height: 18rem;
+    margin-top: 3rem;
+    border-radius: 3rem 3rem 0rem 0rem; 
+    background-color: white;   
+    display: flex;
+    align-items: center;
+    padding: 0rem 5rem 0rem 5rem;
+    gap:6rem;
+}
+
+.footer_logo {
+    width: 12rem;
+}
+
+
+.footer_links {
+    column-count: 3;
+    column-span: all;
+    column-width: 30;
+    column-gap:3rem;
+    column-rule: gainsboro solid 0.25rem ;
+    width: 50rem;
+}
+
+.footer_content h3 {
+    margin-top: 0rem;
+}
+
+.get_up_button{
+    position: absolute;
+    width: 4rem;
+    aspect-ratio: 100/100;
+    background-color: white;
+    color: var(--black);
+    border-radius: 4rem;
+    font-size: var(--paragraph1-size);
+    right: -1.5rem;
+    bottom: -1.5rem;
+    border: var(--black) 0.25rem solid;
+}
+
+footer {
+    position: relative;
+    overflow: hidden;
+}
+
+footer a {
+    text-decoration: underline;
+}
+footer a:hover {
+    text-decoration: none;
+}
+/* footer end  */
+/* scrolling circles */
+.circles { 
+    position: fixed;
+    top: 42vh;
+    left: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+.circles .circle { 
+    width: 1rem;
+    height: 1rem;
+    border: 0.25rem white solid;
+    border-radius: 1.5rem;
+}
+
+.current_circle {
+    background-color: white;
+}

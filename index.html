@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Diwan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="x/icon" href="image/favicon.ico">
+    <!-- Meta tags start -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diwan coffee shop">
+    <meta name="keywords" content="Diwan, Coffee, Study">
+    <meta name="author" content="Yousif Radhi">
+    <!-- Meta tags end -->
+</head>
+
+<body>
+    <!-- Website header start-->
+    <header id="website_top">
+        <div class="get_down_button"><button class=" green_back_hover"><a href="#website_bot">↓</a></button></div>
+        <!--  Navigation bar creation-->
+        <nav class="navigation_bar">
+            <a href="#baner"><button class="green_back_hover">About</button></a>
+            <a href="#menu"><button class="green_back_hover">Menu</button></a>
+            <a href="#booking"><button class="green_back_hover">Book</button></a>
+            <a href="#contact"><button class="green_back_hover">Contact</button></a>
+        </nav>
+        <img src="image/Logo.svg" class="header_logo" alt="Diwan Logo">
+    </header>
+    <!-- Website header End -->
+    <!-- First Section: The baner -->
+    <main>
+        <!-- Main baner illustrations and buttons -->
+        <section class="baner" id="baner">
+            <article>
+                <img src="image/patterns/pattern 1.svg" alt="Traditional Arab pattern" class="baner_pattern1">
+                <img src="image/illustrations/parista.png" alt="Arab dressing woman pouring tea" class="baner_parista">
+                <img class="baner_logo" src="image/Logo.svg" alt="White Diwan logo version">
+                <img src="image/illustrations/cup.png" alt="cup" class="first_cup cup">
+                <img src="image/illustrations/cup.png" alt="cup" class="second_cup cup">
+                <img src="image/illustrations/cup.png" alt="cup" class="third_cup cup">
+                <p class="banner_text_part1">Where every <br>sip</p>
+                <p class="banner_text_part2">sparks ✦<br>inspiration</p>
+                <button class="baner_book_now green_back_hover">Book
+                    Now</button>
+            </article>
+            <!-- the gradual end of fade of the baner and the start of the about section -->
+            <article class="about">
+                <aside class="first_p">
+                    <img src="image/about images/2cups_of_coffee.jpg" class="about_image" alt="Image of our coffee">
+                    <p>Savor the warmth of tradition with every sip. At Diwan, our rich, aromatic coffee is crafted to
+                        perfection—whether you're sharing a moment with a friend or indulging in a quiet study break.
+                        Each cup tells a story of bold flavors and timeless hospitality, inviting you to pause, reflect,
+                        and enjoy.</p>
+                </aside>
+                <aside class="second_p">
+                    <img src="image/about images/coffee_making_corner.jpg" class="about_image" alt="Our coffee making corner">
+                    <p>Step into the heart of Diwan, where art meets precision. Our state-of-the-art coffee machines
+                        blend modern craftsmanship with authentic Arabic techniques, ensuring every brew is a
+                        masterpiece. From espresso to traditional qahwa, this is where passion transforms beans into
+                        liquid gold.</p>
+                </aside>
+            </article>
+        </section>
+        <!-- End of the first section -->
+        <!-- The second section: The About  -->
+        <section class="qualities_box">
+            <!-- This section is about the qualitis of Diwan other than the coffee itself  -->
+            <h1>Qualities</h1>
+            <article class="qualities">
+                <div class="qualitie">
+                    <img src="image/icons/price_tag.png" alt="Price tag icon">
+                    <p>Prices</p>
+                    <details>
+                        <summary>More...</summary>
+                        <p>Quality coffee at affordable prices for everyone.</p>
+                    </details>
+                </div>
+
+                <div class="qualitie">
+                    <img src="image/icons/247_service.png" alt="24/7 icon">
+                    <p>24/7</p>
+                    <details>
+                        <summary>More...</summary>
+                        <p>Open around the clock, whenever you need us.</p>
+                    </details>
+                </div>
+
+                <div class="qualitie">
+                    <img src="image/icons/chair.png" alt="Chair icon">
+                    <p>Outdoor seating</p>
+                    <details>
+                        <summary>More...</summary>
+                        <p>Relax in our cozy outdoor seating area.</p>
+                    </details>
+                </div>
+
+
+                <div class="qualitie">
+                    <img src="image/icons/wifi.png" alt="Wi-Fi icon">
+                    <p>Free Wi-Fi</p>
+                    <details>
+                        <summary>More...</summary>
+                        <p>Stay connected with fast, free Wi-Fi access.</p>
+                    </details>
+                </div>
+            </article>
+        </section>
+        <section class="beans_section">
+            <!-- This section focuses on the quality of our beans and drinks -->
+            <h1>Our Beans</h1>
+
+            <figure>
+                <video controls>
+                    <source src="video/ourBeans.mp4" type="video/mp4">
+                    Your browser do not support those videos
+                </video>
+                <video controls>
+                    <source src="video/beans_lifecycle.mp4" type="video/mp4">
+                    Your browser do not support those videos
+                </video>
+                <figcaption>Vedios of our beans proccess from the factory to you heart taking sip!</figcaption>
+            </figure>
+        </section>
+        <!-- End of the second section -->
+        <!-- Third section start: Menu and bookin section -->
+        <section class="menu" id="menu">
+            <h1>Menu</h1>
+            <article class="menu_cards">
+                <a class="menu_card" href="#booking" data-choices="1 0 1 1 1 image/menu/cool_brew_coffee.png"
+                    onclick="chosing_menu_item(this)">
+                    <img src="image/menu/cool_brew_coffee.png" alt="cool brew coffee">
+                    <p class="menu_card_name">Cool Brew</p>
+                    <p class="menu_card_desc">Refreshing iced coffee delight.</p>
+                    <p class="coffee_price">1.1BD</p>
+
+                </a>
+
+                <a class="menu_card" href="#booking" data-choices="1 0 1 0 1 image/menu//dark_echo_coffee.png"
+                    onclick="chosing_menu_item(this)">
+                    <img src="image/menu//dark_echo_coffee.png" alt="dark echo coffee">
+                    <p class="menu_card_name">Dark Echo</p>
+                    <p class="menu_card_desc">Bold smoky espresso kick. </p>
+                    <p class="coffee_price">1.4BD</p>
+                </a>
+
+                <a class="menu_card" href="#booking" data-choices="1 1 0 1 0 image/menu/foam_whisper_coffee.png"
+                    onclick="chosing_menu_item(this)">
+                    <img src="image/menu/foam_whisper_coffee.png" alt="foam whisper coffee">
+                    <p class="menu_card_name">Foam Whisper</p>
+                    <p class="menu_card_desc">Creamy vanilla latte dream.</p>
+                    <p class="coffee_price">1BD</p>
+                </a>
+
+                <a class="menu_card" href="#booking" data-choices="1 2 1 1 0 image/menu/glacier_brew_coffee.png"
+                    onclick="chosing_menu_item(this)">
+                    <img src="image/menu/glacier_brew_coffee.png" alt="glacier brew coffee">
+                    <p class="menu_card_name">Glacier Brew</p>
+                    <p class="menu_card_desc">Crisp cold brew perfection.</p>
+                    <p class="coffee_price">1BD</p>
+                </a>
+
+                <a class="menu_card" href="#booking" data-choices="1 3 0 0 1 image/menu/golden_crema_coffee.png"
+                    onclick="chosing_menu_item(this)">
+                    <img src="image/menu/golden_crema_coffee.png" alt="golden crema coffee">
+                    <p class="menu_card_name">Golden Crema</p>
+                    <p class="menu_card_desc">Smooth cappuccino foam heaven.</p>
+                    <p class="coffee_price">0.8BD</p>
+
+                </a>
+
+                <a class="menu_card" href="#booking" data-choices="1 0 0 1 1 image/menu/ice_drift_coffee.png"
+                    onclick="chosing_menu_item(this)">
+                    <img src="image/menu/ice_drift_coffee.png" alt="ice drift coffee">
+                    <p class="menu_card_name">Ice Drift</p>
+                    <p class="menu_card_desc">Caramel iced latte bliss.</p>
+                    <p class="coffee_price">0.9BD</p>
+
+                </a>
+
+                <a class="menu_card" href="#booking" data-choices="1 2 0 0 0 image/menu/shadow_roast_coffee.png"
+                    onclick="chosing_menu_item(this)">
+                    <img src="image/menu/shadow_roast_coffee.png" alt="shadow roast coffee">
+                    <p class="menu_card_name">Shadow Roast</p>
+                    <p class="menu_card_desc">Deep dark roast intensity.</p>
+                    <p class="coffee_price">1.2BD</p>
+
+                </a>
+
+                <a class="menu_card" href="#booking" data-choices="1 1 1 0 1 image/menu/velvet_bloom_coffee.png"
+                    onclick="chosing_menu_item(this)">
+                    <img src="image/menu/velvet_bloom_coffee.png" alt="velvet bloom coffee">
+                    <p class="menu_card_name">Velvet Bloom</p>
+                    <p class="menu_card_desc">Floral coffee blend elegance.</p>
+                    <p class="coffee_price">1.5BD</p>
+
+                </a>
+            </article>
+        </section>
+        <!-- Menu end -->
+        <!-- Booking panel  -->
+        <section class="booking" id="booking">
+            <h1>Booking</h1>
+            <article class="booking_panel">
+                <div class="booking_details">
+                    <div class="booking_choices">
+
+                        <!-- this will allow the user to chose the number of seats to book for study groups -->
+                        <div class="booking_choice seats">
+                            <p>People count</p>
+                            <div class="clickables">
+                                <img src="./image/icons/seat.png"
+                                    onclick="seat_togle('brightness(0) saturate(100%) invert(47%) sepia(15%) saturate(1241%) hue-rotate(53deg) brightness(94%) contrast(86%)', this)"
+                                    class="green_seat" data-togle="false" alt="Seat icon">
+                                <img src="./image/icons/seat.png"
+                                    onclick="seat_togle('brightness(0) saturate(100%) invert(31%) sepia(41%) saturate(2480%) hue-rotate(318deg) brightness(86%) contrast(101%)', this)"
+                                    class="red_seat" data-togle="false" alt="Seat icon">
+                                <img src="./image/icons/seat.png"
+                                    onclick="seat_togle('brightness(0) saturate(100%) invert(87%) sepia(97%) saturate(6418%) hue-rotate(317deg) brightness(101%) contrast(101%)', this)"
+                                    class="yellow_seat" data-togle="false" alt="Seat icon">
+                                <img src="./image/icons/seat.png"
+                                    onclick="seat_togle('brightness(0) saturate(100%) invert(31%) sepia(41%) saturate(2480%) hue-rotate(318deg) brightness(86%) contrast(101%)', this)"
+                                    class="red_seat" data-togle="false" alt="Seat icon">
+                                <img src="./image/icons/seat.png"
+                                    onclick="seat_togle('brightness(0) saturate(100%) invert(47%) sepia(15%) saturate(1241%) hue-rotate(53deg) brightness(94%) contrast(86%)', this)"
+                                    class="green_seat" data-togle="false" alt="Seat icon">
+                            </div>
+                        </div>
+
+                        <!-- Allow the user to chose the cup size -->
+                        <div class="booking_choice">
+                            <p>Sizes</p>
+                            <div class="clickables">
+                                <button onclick="button_togle( this)" data-togle="false" data-choice="size"
+                                    data-activeColor="#5D8443" class="green_back_hover">Small</button>
+                                <button onclick="button_togle( this)" data-togle="false" data-choice="size"
+                                    data-activeColor="#CD2E4E" class="red_back_hover">Medium</button>
+                                <button onclick="button_togle( this)" data-togle="false" data-choice="size"
+                                    data-activeColor="#FFCA4C" class="yellow_back_hover">Large</button>
+                            </div>
+                        </div>
+
+                        <!-- Allow the user to chose the syrup -->
+                        <div class="booking_choice">
+                            <p>Syrups</p>
+                            <div class="clickables" id="syrup_options">
+                                <button onclick="button_togle( this)" data-togle="false" data-choice="syrup"
+                                    data-activeColor="#5D8443" class="green_back_hover">Vanilla</button>
+                                <button onclick="button_togle( this)" data-togle="false" data-choice="syrup"
+                                    data-activeColor="#CD2E4E" class="red_back_hover">Coconut</button>
+                                <button onclick="button_togle( this)" data-togle="false" data-choice="syrup"
+                                    data-activeColor="#FFCA4C" class="yellow_back_hover">Hazelnut</button>
+                                <button onclick="button_togle( this)" data-togle="false" data-choice="syrup"
+                                    data-activeColor="#5D8443" class="green_back_hover">Chili</button>
+                            </div>
+                        </div>
+
+                        <!-- Allow the user to chose the decaf coffee option -->
+                        <div class="booking_choice">
+                            <p>Decaf</p>
+                            <div class="clickables" id="decaf_options">
+                                <button onclick="button_togle( this)" class="green_back_hover" data-choice="decaf"
+                                    data-activeColor="#5D8443" data-togle="false">✔</button>
+                                <button onclick="button_togle( this)" class="red_back_hover" data-choice="decaf"
+                                    data-activeColor="#CD2E4E" data-togle="false">𐄂</button>
+                            </div>
+                        </div>
+
+                        <!-- Allow the user to chose the tempreture coffee option -->
+                        <div class="booking_choice">
+                            <p>tempreture</p>
+                            <div class="clickables" id="tempreture_options">
+                                <button onclick="button_togle( this)" class="green_back_hover" data-choice="tempreture"
+                                    data-activeColor="#5D8443" data-togle="false">Hot</button>
+                                <button onclick="button_togle( this)" class="red_back_hover" data-choice="tempreture"
+                                    data-activeColor="#CD2E4E" data-togle="false">Cold</button>
+                            </div>
+                        </div>
+
+                        <!-- Allow the user to chose the Whipped Cream coffee option -->
+                        <div class="booking_choice">
+                            <p>Whipped Cream</p>
+                            <div class="clickables" id="cream_options">
+                                <button onclick="button_togle( this)" class="green_back_hover" data-choice="cream"
+                                    data-activeColor="#5D8443" data-togle="false">✔</button>
+                                <button onclick="button_togle( this)" class="red_back_hover" data-choice="cream"
+                                    data-activeColor="#CD2E4E" data-togle="false">𐄂</button>
+                            </div>
+                        </div>
+
+                        <!-- Here is where the user controls the how many coffee cups to order -->
+                    </div>
+                    <div class="booking_buttons">
+                        <div class="amount_buttons">
+                            <button class="increase_button" onclick="amount_change('add')">+</button>
+                            <p id="amount_indicator">1</p>
+                            <button class="decrease_button" onclick="amount_change('remove')">-</button>
+                        </div>
+                        <button class="add_card_button green_back_hover" onclick="reset_booking_buttons()">Add</button>
+                        <a href="#menu"><button class="menu_button green_back_hover">menu</button></a>
+                    </div>
+                </div>
+
+                <div class="booking_image_container">
+                    <img src="./image/menu/cool_brew_coffee.png" alt="booking panel coffee image preview"
+                        id="booking_panel_image_preview">
+                </div>
+            </article>
+        </section>
+
+        <!-- Third section end -->
+        <!-- Fourth section: self correcting quiz -->
+        <section class="quiz_container">
+            <h1>Not Sure?</h1>
+            <article class="quiz">
+                <p>Wondering if our coffee shop is your ideal study spot? Take this quick quiz to see how Diwan aligns
+                    with your needs! </p>
+                <form name="self_correcting_quiz" onsubmit="return false">
+                    <p>Do face distractions on your study time?</p>
+                    <label>
+                        <input type="radio" name="distractions" value="1">
+                        yes
+                    </label>
+
+                    <label>
+                        <input type="radio" name="distractions" value="0">
+                        no
+                    </label>
+                    <p>Are you searching for a place to study in it with your group?</p>
+
+                    <label>
+                        <input type="radio" name="group" value="1">
+                        yes
+                    </label>
+
+                    <label>
+                        <input type="radio" name="group" value="0">
+                        no
+                    </label>
+
+
+                    <p>On a scale of 1 to 10, how comfortable are you studying in public?</p>
+
+                    <label>
+                        <input type="range" name="public" max="10" value="0">
+                        <p id="quiz_range_indicator">0</p>
+
+                    </label>
+
+                    <p>What is the main reason that keeps you from studying consistently?</p>
+                    <label>
+                        <input type="radio" name="consistency" value="1">
+                        Distractions
+                    </label>
+
+                    <label>
+                        <input type="radio" name="consistency" value="2">
+                        Procrastination
+                    </label>
+
+                    <label>
+                        <input type="radio" name="consistency" value="3">
+                        Lack motivation
+                    </label>
+
+                    <label>
+                        <input type="radio" name="consistency" value="4">
+                        Time management
+                    </label>
+                    <br>
+                    <br>
+                    <!-- here is where the quiz results will be shown -->
+                    <p class="progress_indicator_text">Progress <progress max="100" value="3"
+                            id="quiz_progress"></progress><span id="quiz_score"></span>
+                    </p>
+
+                </form>
+            </article>
+        </section>
+        <!-- end of the fourth section -->
+        <!-- Fifth section start: Contact form -->
+        <section class="contact_form" id="contact">
+            <h1>Reach Us</h1>
+            <form name="contact_form" onsubmit="return false">
+                <input type="text" id="name" name="name" placeholder="Enter your Name">
+                <input type="text" id="email" name="email" placeholder="Enter your E-mail">
+
+                <input type="text" id="title" name="title" placeholder="Enter your message title">
+                <textarea type="" id="content" name="content" placeholder="Message Content"></textarea>
+                <input class="green_back_hover" id="contact_form_submit" type="submit" id="submit" name="submit">
+                <p class="contact_form_error" id="contact_form_error"></p>
+            </form>
+        </section>
+        <!-- end of the fifth section -->
+    </main>
+    <!-- main content end -->
+    <!-- footer start -->
+    <footer id="website_bot">
+        <article class="footer_content">
+            <img src="image/Logo.svg" class="footer_logo" alt="Diwan Logo">
+            <!-- social media links -->
+            <section class="footer_links">
+                <h3>Social Media</h3>
+                <a href="https://instagram.com" target="_blank">
+                    <p>Instagram.com</p>
+                </a>
+                <a href="https://x.com" target="_blank">
+                    <p>x.com</p>
+                </a>
+                <a href="https://tiktok.com" target="_blank">
+                    <p>tiktok.com</p>
+                </a>
+                <a href="https://www.snapchat.com/" target="_blank">
+                    <p>snapchat.com</p>
+                </a>
+                <!-- coffee shop location info -->
+                <h3>Location</h3>
+                <p>House 2146</p>
+                <p>Block 701</p>
+                <p>Road 154</p>
+                <p>Tubli</p>
+                <!-- footer navigation buttons -->
+                <h3>Navigation</h3>
+                <a href="#baner">
+                    <p>About</p>
+                </a>
+                <a href="#menu">
+                    <p>Menu</p>
+                </a>
+                <a href="#booking">
+                    <p>Book</p>
+                </a>
+                <a href="#contact">
+                    <p>Contact</p>
+                </a>
+            </section>
+        </article>
+        <a href="#website_top"><button class="get_up_button green_back_hover">↑</button></a>
+    </footer>
+    <!-- scroll circles -->
+    <section class="circles">
+        <div class="circle st_circle" id="st_circle"></div>
+        <div class="circle nd_circle" id="nd_circle"></div>
+        <div class="circle rd_circle" id="rd_circle"></div>
+        <div class="circle rth_circle" id="rth_circle"></div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
